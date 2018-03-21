@@ -23,12 +23,17 @@ class GameViewController: UIViewController {
                 
                 // Present the scene
                 view.presentScene(scene)
+                
+                let caterpillar = scene.childNode(withName: "caterpillar") as! Caterpillar
+                caterpillar.playWalkAnimation()
             }
             
             view.ignoresSiblingOrder = true
             
             view.showsFPS = true
             view.showsNodeCount = true
+            
+            
         }
     }
 }

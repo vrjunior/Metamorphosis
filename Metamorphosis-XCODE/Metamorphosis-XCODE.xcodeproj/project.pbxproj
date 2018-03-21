@@ -8,26 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		D27AC12120604116007EA30F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AC12020604116007EA30F /* AppDelegate.swift */; };
-		D27AC12320604116007EA30F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D27AC12220604116007EA30F /* GameScene.sks */; };
-		D27AC12520604116007EA30F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D27AC12420604116007EA30F /* Actions.sks */; };
-		D27AC12720604116007EA30F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AC12620604116007EA30F /* GameScene.swift */; };
 		D27AC12920604116007EA30F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AC12820604116007EA30F /* GameViewController.swift */; };
 		D27AC12C20604116007EA30F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27AC12A20604116007EA30F /* Main.storyboard */; };
 		D27AC12E20604116007EA30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27AC12D20604116007EA30F /* Assets.xcassets */; };
 		D27AC13120604116007EA30F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27AC12F20604116007EA30F /* LaunchScreen.storyboard */; };
+		D27AC1432060426E007EA30F /* three.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AC1392060426E007EA30F /* three.png */; };
+		D27AC1442060426E007EA30F /* grass1.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AC13A2060426E007EA30F /* grass1.png */; };
+		D27AC1452060426E007EA30F /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AC13B2060426E007EA30F /* sad.png */; };
+		D27AC1462060426E007EA30F /* happiness.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AC13C2060426E007EA30F /* happiness.png */; };
+		D27AC1472060426E007EA30F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D27AC13D2060426E007EA30F /* GameScene.sks */; };
+		D27AC1482060426E007EA30F /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AC13F2060426E007EA30F /* Bubble.swift */; };
+		D27AC1492060426E007EA30F /* HappinessBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AC1402060426E007EA30F /* HappinessBar.swift */; };
+		D27AC14A2060426E007EA30F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AC1412060426E007EA30F /* GameScene.swift */; };
+		D27AC14B2060426E007EA30F /* BubbleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AC1422060426E007EA30F /* BubbleController.swift */; };
+		D287663A2062F27400E84AB4 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28766392062F27400E84AB4 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D27AC11D20604116007EA30F /* Metamorphosis-XCODE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metamorphosis-XCODE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27AC12020604116007EA30F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D27AC12220604116007EA30F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		D27AC12420604116007EA30F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		D27AC12620604116007EA30F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D27AC12820604116007EA30F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D27AC12B20604116007EA30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D27AC12D20604116007EA30F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D27AC13020604116007EA30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D27AC13220604116007EA30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27AC1392060426E007EA30F /* three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = three.png; sourceTree = "<group>"; };
+		D27AC13A2060426E007EA30F /* grass1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass1.png; sourceTree = "<group>"; };
+		D27AC13B2060426E007EA30F /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		D27AC13C2060426E007EA30F /* happiness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happiness.png; sourceTree = "<group>"; };
+		D27AC13D2060426E007EA30F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D27AC13F2060426E007EA30F /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		D27AC1402060426E007EA30F /* HappinessBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessBar.swift; sourceTree = "<group>"; };
+		D27AC1412060426E007EA30F /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D27AC1422060426E007EA30F /* BubbleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleController.swift; sourceTree = "<group>"; };
+		D28766392062F27400E84AB4 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +74,42 @@
 		D27AC11F20604116007EA30F /* Metamorphosis-XCODE */ = {
 			isa = PBXGroup;
 			children = (
+				D27AC1382060426E007EA30F /* Resources */,
+				D27AC13E2060426E007EA30F /* Sources */,
 				D27AC12020604116007EA30F /* AppDelegate.swift */,
-				D27AC12220604116007EA30F /* GameScene.sks */,
-				D27AC12420604116007EA30F /* Actions.sks */,
-				D27AC12620604116007EA30F /* GameScene.swift */,
-				D27AC12820604116007EA30F /* GameViewController.swift */,
 				D27AC12A20604116007EA30F /* Main.storyboard */,
 				D27AC12D20604116007EA30F /* Assets.xcassets */,
 				D27AC12F20604116007EA30F /* LaunchScreen.storyboard */,
 				D27AC13220604116007EA30F /* Info.plist */,
 			);
 			path = "Metamorphosis-XCODE";
+			sourceTree = "<group>";
+		};
+		D27AC1382060426E007EA30F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D27AC1392060426E007EA30F /* three.png */,
+				D27AC13A2060426E007EA30F /* grass1.png */,
+				D27AC13B2060426E007EA30F /* sad.png */,
+				D27AC13C2060426E007EA30F /* happiness.png */,
+				D27AC13D2060426E007EA30F /* GameScene.sks */,
+			);
+			name = Resources;
+			path = ../../Metamorphosis.playground/Resources;
+			sourceTree = "<group>";
+		};
+		D27AC13E2060426E007EA30F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D27AC12820604116007EA30F /* GameViewController.swift */,
+				D27AC13F2060426E007EA30F /* Bubble.swift */,
+				D27AC1402060426E007EA30F /* HappinessBar.swift */,
+				D27AC1412060426E007EA30F /* GameScene.swift */,
+				D27AC1422060426E007EA30F /* BubbleController.swift */,
+				D28766392062F27400E84AB4 /* Character.swift */,
+			);
+			name = Sources;
+			path = ../../Metamorphosis.playground/Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,11 +171,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27AC1452060426E007EA30F /* sad.png in Resources */,
+				D27AC1442060426E007EA30F /* grass1.png in Resources */,
+				D27AC1462060426E007EA30F /* happiness.png in Resources */,
+				D27AC1432060426E007EA30F /* three.png in Resources */,
+				D27AC1472060426E007EA30F /* GameScene.sks in Resources */,
 				D27AC12C20604116007EA30F /* Main.storyboard in Resources */,
-				D27AC12320604116007EA30F /* GameScene.sks in Resources */,
 				D27AC12E20604116007EA30F /* Assets.xcassets in Resources */,
 				D27AC13120604116007EA30F /* LaunchScreen.storyboard in Resources */,
-				D27AC12520604116007EA30F /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D27AC12720604116007EA30F /* GameScene.swift in Sources */,
+				D27AC14A2060426E007EA30F /* GameScene.swift in Sources */,
 				D27AC12920604116007EA30F /* GameViewController.swift in Sources */,
+				D287663A2062F27400E84AB4 /* Character.swift in Sources */,
+				D27AC1492060426E007EA30F /* HappinessBar.swift in Sources */,
+				D27AC1482060426E007EA30F /* Bubble.swift in Sources */,
+				D27AC14B2060426E007EA30F /* BubbleController.swift in Sources */,
 				D27AC12120604116007EA30F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
