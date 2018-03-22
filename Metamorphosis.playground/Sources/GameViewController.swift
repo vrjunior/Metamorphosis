@@ -12,6 +12,10 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+    var caterpillar: Caterpillar!
+    var three: SKSpriteNode!
+    var button: SKButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,8 +28,11 @@ class GameViewController: UIViewController {
                 // Present the scene
                 view.presentScene(scene)
                 
-                let caterpillar = scene.childNode(withName: "caterpillar") as! Caterpillar
-                caterpillar.playWalkAnimation()
+                self.caterpillar = scene.childNode(withName: "caterpillar") as! Caterpillar
+                self.three = scene.childNode(withName: "three") as! SKSpriteNode
+                self.button = scene.childNode(withName: "button") as! SKButton
+            
+                self.button.delegate = self
             }
             
             view.ignoresSiblingOrder = true
@@ -35,5 +42,13 @@ class GameViewController: UIViewController {
             
             
         }
+    }
+    
+}
+
+extension GameViewController : SKButtonDelegate {
+    
+    func buttonPressed(target: SKButton) {
+        self.caterpillar.moveLeft()
     }
 }

@@ -51,7 +51,6 @@ open class Bubble : SKShapeNode {
         var actions: [SKAction] = [SKAction]()
         var bubbleHeight: CGFloat = 0
         
-    
         while(bubbleHeight < screenHeight) {
             
             //get a value between 1 and 10

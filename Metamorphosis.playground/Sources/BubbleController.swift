@@ -27,7 +27,7 @@ public class BubbleController {
     func createBall() -> Bubble {
         
         //generates a random size between 50 ~ 100
-        let randomSize = CGFloat(arc4random_uniform(50) + 20)
+        let randomSize = CGFloat(arc4random_uniform(50) + 50)
 
         let bubble = Bubble(circleOfRadius: randomSize)
 
@@ -35,8 +35,9 @@ public class BubbleController {
         let colorIndex: Int = Int(arc4random_uniform(UInt32(colors.count)))
         let color = colors[colorIndex]
         bubble.fillColor = color
+        bubble.alpha = 0.6
         
-        bubble.zPosition = 5
+        bubble.zPosition = 10
         
         //generate a random quote
         let quoteIndex: Int = Int(arc4random_uniform(UInt32(self.quotes.count)))

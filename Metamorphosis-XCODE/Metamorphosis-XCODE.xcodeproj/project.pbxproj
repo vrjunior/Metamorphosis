@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D241DC1020642F9600C7D620 /* SKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241DC0F20642F9600C7D620 /* SKButton.swift */; };
+		D241DC122064479300C7D620 /* AudioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241DC112064479300C7D620 /* AudioHelper.swift */; };
+		D241DC142064491500C7D620 /* Habanera_by_Bizet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D241DC132064491500C7D620 /* Habanera_by_Bizet.mp3 */; };
 		D27AC12120604116007EA30F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AC12020604116007EA30F /* AppDelegate.swift */; };
 		D27AC12920604116007EA30F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AC12820604116007EA30F /* GameViewController.swift */; };
 		D27AC12C20604116007EA30F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27AC12A20604116007EA30F /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D241DC0F20642F9600C7D620 /* SKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKButton.swift; sourceTree = "<group>"; };
+		D241DC112064479300C7D620 /* AudioHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHelper.swift; sourceTree = "<group>"; };
+		D241DC132064491500C7D620 /* Habanera_by_Bizet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Habanera_by_Bizet.mp3; sourceTree = "<group>"; };
 		D27AC11D20604116007EA30F /* Metamorphosis-XCODE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metamorphosis-XCODE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27AC12020604116007EA30F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D27AC12820604116007EA30F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 		D27AC1382060426E007EA30F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D241DC132064491500C7D620 /* Habanera_by_Bizet.mp3 */,
 				D27AC1392060426E007EA30F /* three.png */,
 				D27AC13A2060426E007EA30F /* grass1.png */,
 				D27AC13B2060426E007EA30F /* sad.png */,
@@ -107,6 +114,8 @@
 				D27AC1412060426E007EA30F /* GameScene.swift */,
 				D27AC1422060426E007EA30F /* BubbleController.swift */,
 				D28766392062F27400E84AB4 /* Character.swift */,
+				D241DC0F20642F9600C7D620 /* SKButton.swift */,
+				D241DC112064479300C7D620 /* AudioHelper.swift */,
 			);
 			name = Sources;
 			path = ../../Metamorphosis.playground/Sources;
@@ -179,6 +188,7 @@
 				D27AC12C20604116007EA30F /* Main.storyboard in Resources */,
 				D27AC12E20604116007EA30F /* Assets.xcassets in Resources */,
 				D27AC13120604116007EA30F /* LaunchScreen.storyboard in Resources */,
+				D241DC142064491500C7D620 /* Habanera_by_Bizet.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +202,8 @@
 				D27AC14A2060426E007EA30F /* GameScene.swift in Sources */,
 				D27AC12920604116007EA30F /* GameViewController.swift in Sources */,
 				D287663A2062F27400E84AB4 /* Character.swift in Sources */,
+				D241DC122064479300C7D620 /* AudioHelper.swift in Sources */,
+				D241DC1020642F9600C7D620 /* SKButton.swift in Sources */,
 				D27AC1492060426E007EA30F /* HappinessBar.swift in Sources */,
 				D27AC1482060426E007EA30F /* Bubble.swift in Sources */,
 				D27AC14B2060426E007EA30F /* BubbleController.swift in Sources */,
