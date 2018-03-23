@@ -9,19 +9,19 @@
 import Foundation
 import AVFoundation
 
-enum AudioType: String {
-    case first = "Habanera_by_Bizet.mp3"
+public enum AudioType: String {
+    case first = "HabaneraByBizet.mp3"
 }
 
-class AudioHelper {
+public class AudioHelper {
     
     private var playingAudio: AudioType!
     public static let shared = AudioHelper()
     
     fileprivate init() {
-        self.playingAudio = .first
         
-        self.play(audio: playingAudio)
+        self.play(audio: .first)
+        
     }
     
     
@@ -30,7 +30,11 @@ class AudioHelper {
             do {
                 if let url = Bundle.main.url(forResource: audio.rawValue, withExtension: nil) {
                     let audioPlayer = try AVAudioPlayer(contentsOf: url)
+                    audioPlayer.prepareToPlay()
+                    
                     audioPlayer.play()
+                    self.playingAudio = audio
+                    print("audio")
                 }
             }
             catch let error {

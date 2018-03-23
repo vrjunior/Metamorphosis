@@ -17,14 +17,11 @@ class Caterpillar : SKSpriteNode {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        let caterpillarAtlas = SKTextureAtlas(named: "caterpillar")
+
+        let frame1 = SKTexture(imageNamed: "caterpillar1")
+        let frame2 = SKTexture(imageNamed: "caterpillar2")
         
-        let numImages = caterpillarAtlas.textureNames.count
-        
-        for i in 1...numImages {
-            let caterpillarTextureName = "caterpillar\(i)"
-            walkFrames.append(caterpillarAtlas.textureNamed(caterpillarTextureName))
-        }
+        self.walkFrames = [frame1, frame2]
     }
     
     
