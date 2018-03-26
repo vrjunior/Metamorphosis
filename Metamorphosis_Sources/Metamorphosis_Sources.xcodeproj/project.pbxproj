@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21B730520696053002E8954 /* CocconScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D21B730420696053002E8954 /* CocconScene.sks */; };
+		D248A4352069724A004C02C6 /* ButterflyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D248A4342069724A004C02C6 /* ButterflyScene.sks */; };
+		D248A43720697D05004C02C6 /* Butterfly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248A43620697D05004C02C6 /* Butterfly.swift */; };
+		D268B51A2069662D004EF7BD /* CocconScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268B5192069662D004EF7BD /* CocconScene.swift */; };
 		D2714D4720657FE000E46023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D4620657FE000E46023 /* AppDelegate.swift */; };
 		D2714D4F20657FE000E46023 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D4E20657FE000E46023 /* GameViewController.swift */; };
 		D2714D5220657FE000E46023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2714D5020657FE000E46023 /* Main.storyboard */; };
@@ -16,16 +20,21 @@
 		D2714D682065801000E46023 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D602065801000E46023 /* Bubble.swift */; };
 		D2714D692065801000E46023 /* HappinessBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D612065801000E46023 /* HappinessBar.swift */; };
 		D2714D6A2065801000E46023 /* BubbleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D622065801000E46023 /* BubbleController.swift */; };
-		D2714D6B2065801000E46023 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D632065801000E46023 /* Character.swift */; };
+		D2714D6B2065801000E46023 /* Caterpillar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D632065801000E46023 /* Caterpillar.swift */; };
 		D2714D6C2065801000E46023 /* SKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D642065801000E46023 /* SKButton.swift */; };
 		D2714D6D2065801000E46023 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D652065801000E46023 /* GameScene.swift */; };
 		D2714D6E2065801000E46023 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D662065801000E46023 /* LiveView.swift */; };
 		D2714D702065803500E46023 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D2714D6F2065803500E46023 /* GameScene.sks */; };
 		D289E90B20658371005C7CF1 /* HabaneraByBizet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D289E90A20658371005C7CF1 /* HabaneraByBizet.mp3 */; };
 		D289E90D20659D96005C7CF1 /* CaterpillarParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = D289E90C20659D96005C7CF1 /* CaterpillarParticle.sks */; };
+		D2D603482069881E000CB52E /* ButterflyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D603472069881E000CB52E /* ButterflyScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D21B730420696053002E8954 /* CocconScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CocconScene.sks; sourceTree = "<group>"; };
+		D248A4342069724A004C02C6 /* ButterflyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ButterflyScene.sks; sourceTree = "<group>"; };
+		D248A43620697D05004C02C6 /* Butterfly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butterfly.swift; sourceTree = "<group>"; };
+		D268B5192069662D004EF7BD /* CocconScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocconScene.swift; sourceTree = "<group>"; };
 		D2714D4320657FE000E46023 /* Metamorphosis_Sources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metamorphosis_Sources.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2714D4620657FE000E46023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2714D4E20657FE000E46023 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -37,13 +46,14 @@
 		D2714D602065801000E46023 /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
 		D2714D612065801000E46023 /* HappinessBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessBar.swift; sourceTree = "<group>"; };
 		D2714D622065801000E46023 /* BubbleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleController.swift; sourceTree = "<group>"; };
-		D2714D632065801000E46023 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D2714D632065801000E46023 /* Caterpillar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caterpillar.swift; sourceTree = "<group>"; };
 		D2714D642065801000E46023 /* SKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKButton.swift; sourceTree = "<group>"; };
 		D2714D652065801000E46023 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D2714D662065801000E46023 /* LiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
 		D2714D6F2065803500E46023 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = ../../Metamorphosis.playground/Resources/GameScene.sks; sourceTree = "<group>"; };
 		D289E90A20658371005C7CF1 /* HabaneraByBizet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HabaneraByBizet.mp3; sourceTree = "<group>"; };
 		D289E90C20659D96005C7CF1 /* CaterpillarParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaterpillarParticle.sks; sourceTree = "<group>"; };
+		D2D603472069881E000CB52E /* ButterflyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +89,9 @@
 				D289E90A20658371005C7CF1 /* HabaneraByBizet.mp3 */,
 				D2714D5E2065801000E46023 /* Sources */,
 				D2714D4620657FE000E46023 /* AppDelegate.swift */,
+				D21B730420696053002E8954 /* CocconScene.sks */,
 				D2714D6F2065803500E46023 /* GameScene.sks */,
+				D248A4342069724A004C02C6 /* ButterflyScene.sks */,
 				D2714D4E20657FE000E46023 /* GameViewController.swift */,
 				D289E90C20659D96005C7CF1 /* CaterpillarParticle.sks */,
 				D2714D5020657FE000E46023 /* Main.storyboard */,
@@ -97,10 +109,13 @@
 				D2714D602065801000E46023 /* Bubble.swift */,
 				D2714D612065801000E46023 /* HappinessBar.swift */,
 				D2714D622065801000E46023 /* BubbleController.swift */,
-				D2714D632065801000E46023 /* Character.swift */,
+				D2714D632065801000E46023 /* Caterpillar.swift */,
+				D2D603472069881E000CB52E /* ButterflyScene.swift */,
 				D2714D642065801000E46023 /* SKButton.swift */,
 				D2714D652065801000E46023 /* GameScene.swift */,
 				D2714D662065801000E46023 /* LiveView.swift */,
+				D268B5192069662D004EF7BD /* CocconScene.swift */,
+				D248A43620697D05004C02C6 /* Butterfly.swift */,
 			);
 			name = Sources;
 			path = ../../Metamorphosis.playground/Sources;
@@ -165,6 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D248A4352069724A004C02C6 /* ButterflyScene.sks in Resources */,
+				D21B730520696053002E8954 /* CocconScene.sks in Resources */,
 				D2714D702065803500E46023 /* GameScene.sks in Resources */,
 				D2714D5220657FE000E46023 /* Main.storyboard in Resources */,
 				D2714D5420657FE000E46023 /* Assets.xcassets in Resources */,
@@ -181,16 +198,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D268B51A2069662D004EF7BD /* CocconScene.swift in Sources */,
 				D2714D6D2065801000E46023 /* GameScene.swift in Sources */,
 				D2714D682065801000E46023 /* Bubble.swift in Sources */,
+				D248A43720697D05004C02C6 /* Butterfly.swift in Sources */,
 				D2714D4F20657FE000E46023 /* GameViewController.swift in Sources */,
 				D2714D672065801000E46023 /* AudioHelper.swift in Sources */,
 				D2714D4720657FE000E46023 /* AppDelegate.swift in Sources */,
 				D2714D6E2065801000E46023 /* LiveView.swift in Sources */,
+				D2D603482069881E000CB52E /* ButterflyScene.swift in Sources */,
 				D2714D6A2065801000E46023 /* BubbleController.swift in Sources */,
 				D2714D692065801000E46023 /* HappinessBar.swift in Sources */,
 				D2714D6C2065801000E46023 /* SKButton.swift in Sources */,
-				D2714D6B2065801000E46023 /* Character.swift in Sources */,
+				D2714D6B2065801000E46023 /* Caterpillar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

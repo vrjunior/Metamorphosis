@@ -1,14 +1,28 @@
 import Foundation
 import SpriteKit
 
-public class HappinessBar : SKNode {
+protocol HappinessDelegate {
+    func happinessIsFull()
+    func happinessIsEmpty()
+}
+
+class HappinessBar : SKNode {
     
     private var _happinessLevel : Float = 0
-    var happinessLevel : Float{
+    public var happinessLevel : Float {
         set {
-            if newValue >= 0 && newValue <= 100 {
-                self._happinessLevel = newValue
+            if newValue < 0 {
+                self._happinessLevel = 0
+                self.delegate?.happinessIsEmpty()
+                return
             }
+            if newValue > 1 {
+                self._happinessLevel = 1
+                self.delegate?.happinessIsFull()
+                return
+            }
+            
+            self._happinessLevel = newValue
         }
         get {
             return _happinessLevel
@@ -19,6 +33,8 @@ public class HappinessBar : SKNode {
     var happyFace: SKSpriteNode!
     var sadFace: SKSpriteNode!
     
+    public var delegate: HappinessDelegate?
+    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -26,15 +42,25 @@ public class HappinessBar : SKNode {
         self.bar = self.childNode(withName: "bar") as! SKSpriteNode
         self.happyFace = self.childNode(withName: "happyFace") as! SKSpriteNode
         self.sadFace = self.childNode(withName: "sadFace") as! SKSpriteNode
+        
+        self.changeBar(percentage: happinessLevel)
     }
     
-    public func increaseBar(percentage: Float) {
+    private func changeBar(percentage: Float) {
         self.happinessLevel += percentage
         
-        let newWidth = CGFloat(happinessLevel / 100) * backgroundBar.size.width
+        let newWidth = CGFloat(happinessLevel) * self.backgroundBar.size.width
         let action = SKAction.resize(toWidth: newWidth, duration: 0.1)
         
         self.bar.run(action)
     }
     
+    public func decreaseBar(percentage: Float) {
+        self.changeBar(percentage: -percentage)
+    }
+    
+    public func increaseBar(percentage: Float) {
+        self.changeBar(percentage: percentage)
+    }
+        
 }

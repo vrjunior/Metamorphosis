@@ -4,7 +4,8 @@ import UIKit
 
 public class BubbleController {
     
-    var scene: SKScene!
+    private var scene: SKScene!
+    public var bubbleDelegate: BubbleDelegate?
     
     let quotes: [String] = [
         "Kindness Matters",
@@ -37,7 +38,7 @@ public class BubbleController {
         bubble.fillColor = color
         bubble.alpha = 0.6
         
-        bubble.zPosition = 10
+        bubble.zPosition = 20
         
         //generate a random quote
         let quoteIndex: Int = Int(arc4random_uniform(UInt32(self.quotes.count)))
@@ -61,7 +62,7 @@ public class BubbleController {
         for _ in 0..<amountOfBalls {
             
             let bubble = self.createBall()
-            bubble.delegate = self
+            bubble.delegate = self.bubbleDelegate
             
             //random width with bubble width
             let randomX = CGFloat(arc4random_uniform(UInt32(scene.size.width))) - (scene.size.width / 2)
@@ -79,11 +80,4 @@ public class BubbleController {
     
 }
 
-extension BubbleController : BubbleDelegate {
-    
-    public func popBubble(bubble: Bubble) {
-        if bubble.parent != nil {
-            bubble.removeFromParent()
-        }
-    }
-}
+

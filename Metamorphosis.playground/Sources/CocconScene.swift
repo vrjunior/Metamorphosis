@@ -1,7 +1,7 @@
 import Foundation
 import SpriteKit
 
-public class GameScene: SKScene {
+public class CocconScene: SKScene {
     
     var happinessBar: HappinessBar!
     var bubbleController: BubbleController!
@@ -11,49 +11,52 @@ public class GameScene: SKScene {
     
     
     public override func sceneDidLoad() {
-        
         super.sceneDidLoad()
         
         self.happinessBar = self.childNode(withName: "happinessBar") as! HappinessBar
-        self.happinessBar.happinessLevel = 1
+        self.happinessBar.delegate = self
         
-        self.caterpillar = self.childNode(withName: "caterpillar") as! Caterpillar
         self.three = self.childNode(withName: "three") as! SKSpriteNode
         self.button = self.childNode(withName: "button") as! SKButton
         
-        self.button.delegate = self
+        self.bubbleController = BubbleController(scene: self)
+        self.bubbleController.bubbleDelegate = self
+        
+        self.seeKindness()
     }
     
     public override func didMove(to view: SKView) {
         super.didMove(to: view)
         
     }
-
     
     public override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
     
-    private func caterpillarTurnOnCacoon() {
-        //let nextScene = CocconScene(fileNamed: "CocconScene")
+    
+    open func seeKindness() {
+        self.bubbleController.startCreateBalls()
     }
 }
 
-
-extension GameScene : SKButtonDelegate {
+extension CocconScene : BubbleDelegate {
     
-    func buttonPressed(target: SKButton) {
-        self.caterpillar.moveLeft()
-        self.happinessBar.decreaseBar(percentage: 0.3)
+    public func popBubble(bubble: Bubble) {
+        if bubble.parent != nil {
+            bubble.removeFromParent()
+            self.happinessBar.increaseBar(percentage: 0.1)
+        }
     }
 }
 
-extension GameScene : SKPhysicsContactDelegate {
+extension CocconScene : HappinessDelegate {
     
-    public func didBegin(_ contact: SKPhysicsContact) {
-        
-        self.caterpillarTurnOnCacoon()
-        
+    func happinessIsFull() {
+        print("nextPage")
     }
     
+    func happinessIsEmpty() {
+        
+    }
 }
