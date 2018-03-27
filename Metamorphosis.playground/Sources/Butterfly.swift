@@ -28,7 +28,7 @@ class Butterfly : SKSpriteNode {
     }
     
     private func startFlyAnimation() {
-        let action = SKAction.animate(with: self.flyFrames, timePerFrame: 0.006, resize: false, restore: true)
+        let action = SKAction.animate(with: self.flyFrames, timePerFrame: 0.03, resize: false, restore: true)
         let repeatAction = SKAction.repeatForever(action)
         
         self.run(repeatAction)
