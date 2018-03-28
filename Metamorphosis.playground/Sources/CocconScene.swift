@@ -5,7 +5,6 @@ public class CocconScene: SKScene {
     
     var happinessBar: HappinessBar!
     var bubbleController: BubbleController!
-    var caterpillar: Caterpillar!
     var three: SKSpriteNode!
     var button: SKButton!
     

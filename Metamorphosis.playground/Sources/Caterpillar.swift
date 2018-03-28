@@ -12,7 +12,7 @@ import SpriteKit
 class Caterpillar : SKSpriteNode {
     
     var walkFrames: [SKTexture] = []
-    public var moveDistance: CGFloat = 50
+    public var moveDistance: CGFloat = 80
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

@@ -192,6 +192,8 @@ public class ButterflyScene: SKScene {
                 self.heartCounter += 1
                 self.heartCounterLabel.text = "\(self.heartCounter)"
             }
+            
+            return
         }
         
         //handle remover and heart cont
@@ -219,7 +221,7 @@ extension ButterflyScene : SKPhysicsContactDelegate {
             self.handleHeartContact(heart: contact.bodyA, another: contact.bodyB)
         }
         
-        if contact.bodyB.categoryBitMask == Heart.contactBitMask {
+        if contact.bodyB.categoryBitMask == Heart.categoryBitMask {
             self.handleHeartContact(heart: contact.bodyB, another: contact.bodyA)
         }
         

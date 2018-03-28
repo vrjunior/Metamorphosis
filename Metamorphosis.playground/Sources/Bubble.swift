@@ -37,7 +37,7 @@ open class Bubble : SKShapeNode {
     private func setupLabel(center: CGFloat) {
         self.label.fontSize = 14
         self.label.position = CGPoint(x: center, y: center)
-        self.label.fontColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        self.label.fontColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
         //self.label.lineBreakMode = .
         self.label.numberOfLines = 2

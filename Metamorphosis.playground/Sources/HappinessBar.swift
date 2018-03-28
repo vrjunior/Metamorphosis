@@ -8,7 +8,16 @@ protocol HappinessDelegate {
 
 class HappinessBar : SKNode {
     
-    private var _happinessLevel : Float = 0
+    private var _happinessLevel : Float = 0 {
+        didSet {
+            let newWidth = CGFloat(happinessLevel) * self.backgroundBar.size.width
+            let action = SKAction.run {
+                self.bar.size.width = newWidth
+            }
+            
+            self.bar.run(action)
+        }
+    }
     public var happinessLevel : Float {
         set {
             if newValue < 0 {
@@ -46,13 +55,10 @@ class HappinessBar : SKNode {
         self.changeBar(percentage: happinessLevel)
     }
     
+    
+    
     private func changeBar(percentage: Float) {
         self.happinessLevel += percentage
-        
-        let newWidth = CGFloat(happinessLevel) * self.backgroundBar.size.width
-        let action = SKAction.resize(toWidth: newWidth, duration: 0.1)
-        
-        self.bar.run(action)
     }
     
     public func decreaseBar(percentage: Float) {

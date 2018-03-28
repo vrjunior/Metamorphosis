@@ -15,31 +15,25 @@ public enum AudioType: String {
 
 public class AudioHelper {
     
-    private var playingAudio: AudioType!
-    public static let shared = AudioHelper()
+    private var audioPlayer: AVAudioPlayer?
     
-    fileprivate init() {
-        
-        self.play(audio: .first)
-        
+    init(audio: AudioType) {
+        do {
+            if let url = Bundle.main.url(forResource: audio.rawValue, withExtension: nil) {
+                self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+                self.audioPlayer?.prepareToPlay()
+                
+            }
+        }
+        catch let error {
+            print(error.localizedDescription)
+        }
     }
     
     
-    public func play(audio: AudioType) {
-        if self.playingAudio != audio {
-            do {
-                if let url = Bundle.main.url(forResource: audio.rawValue, withExtension: nil) {
-                    let audioPlayer = try AVAudioPlayer(contentsOf: url)
-                    audioPlayer.prepareToPlay()
-                    
-                    audioPlayer.play()
-                    self.playingAudio = audio
-                    print("audio")
-                }
-            }
-            catch let error {
-                print(error.localizedDescription)
-            }
+    public func play() {
+        if let audioPlayer = self.audioPlayer {
+            audioPlayer.play()
         }
     }
     
