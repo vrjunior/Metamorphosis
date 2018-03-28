@@ -51,7 +51,9 @@ open class Bubble : SKShapeNode {
         self.label.numberOfLines = 2
         
         //bold text
-        self.label.fontName = ("\(self.label.fontName)-Bold")?
+        if let fontName = self.label.fontName {
+            self.label.fontName = "\(fontName)-Bold"
+        }
         
         //adding label
         self.addChild(label)

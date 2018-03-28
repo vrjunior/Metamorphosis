@@ -1,14 +1,29 @@
-//: [Previous](@previous)
+//: [Previous](Catepillar)
 
 import PlaygroundSupport
 import SpriteKit
 
 
 if let scene = CocconScene(fileNamed: "CocconScene") {
-    print("scene")
     loadLiveView(scene: scene)
 }
-//: [First Page](First)
+
+/*: coccon
+
+ # But we need to see the good side of life
+ 
+*/
 
 
-//: [Next](@next)
+/*: coccon2
+ 
+ # Collect the kindness in the path of our little Caterpillar!
+ 
+ */
+
+
+/*: coccon3
+ # 👆🏻 Tap to collect and make the caterpillar's life happier
+ */
+
+//: [Next](Butterfly)
