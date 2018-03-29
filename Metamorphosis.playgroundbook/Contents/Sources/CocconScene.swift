@@ -51,11 +51,11 @@ extension CocconScene : BubbleDelegate {
 
 extension CocconScene : HappinessDelegate {
     
-    func happinessIsFull() {
+    public func happinessIsFull() {
         print("nextPage")
     }
     
-    func happinessIsEmpty() {
+    public func happinessIsEmpty() {
         
     }
 }

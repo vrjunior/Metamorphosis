@@ -1,12 +1,12 @@
 import Foundation
 import SpriteKit
 
-protocol HappinessDelegate {
+public protocol HappinessDelegate {
     func happinessIsFull()
     func happinessIsEmpty()
 }
 
-class HappinessBar : SKNode {
+public class HappinessBar : SKNode {
     
     private var _happinessLevel : Float = 0 {
         didSet {

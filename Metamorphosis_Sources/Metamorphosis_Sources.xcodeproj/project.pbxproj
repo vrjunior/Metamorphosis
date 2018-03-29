@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D21B730520696053002E8954 /* CocconScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D21B730420696053002E8954 /* CocconScene.sks */; };
-		D248A4352069724A004C02C6 /* ButterflyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D248A4342069724A004C02C6 /* ButterflyScene.sks */; };
 		D248A43720697D05004C02C6 /* Butterfly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248A43620697D05004C02C6 /* Butterfly.swift */; };
-		D268B51A2069662D004EF7BD /* CocconScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268B5192069662D004EF7BD /* CocconScene.swift */; };
 		D2714D4720657FE000E46023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D4620657FE000E46023 /* AppDelegate.swift */; };
 		D2714D4F20657FE000E46023 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D4E20657FE000E46023 /* GameViewController.swift */; };
 		D2714D5220657FE000E46023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2714D5020657FE000E46023 /* Main.storyboard */; };
@@ -26,17 +23,17 @@
 		D2714D6E2065801000E46023 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2714D662065801000E46023 /* LiveView.swift */; };
 		D2714D702065803500E46023 /* CaterpillarScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D2714D6F2065803500E46023 /* CaterpillarScene.sks */; };
 		D289E90B20658371005C7CF1 /* HabaneraByBizet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D289E90A20658371005C7CF1 /* HabaneraByBizet.mp3 */; };
-		D289E90D20659D96005C7CF1 /* CaterpillarParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = D289E90C20659D96005C7CF1 /* CaterpillarParticle.sks */; };
+		D2C43852206D6CA200C25018 /* PresentationScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D2C43851206D6CA200C25018 /* PresentationScene.sks */; };
+		D2C43855206D742000C25018 /* CocoonScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D2C43853206D742000C25018 /* CocoonScene.sks */; };
+		D2C43856206D742000C25018 /* CaterpillarScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D2C43854206D742000C25018 /* CaterpillarScene.sks */; };
+		D2C43858206D743A00C25018 /* ButterflyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D2C43857206D743A00C25018 /* ButterflyScene.sks */; };
 		D2D603482069881E000CB52E /* ButterflyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D603472069881E000CB52E /* ButterflyScene.swift */; };
 		D2F463E7206AD53800732B21 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F463E6206AD53800732B21 /* Heart.swift */; };
 		D2F463E9206AD78300732B21 /* HeartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F463E8206AD78300732B21 /* HeartController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D21B730420696053002E8954 /* CocconScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CocconScene.sks; sourceTree = "<group>"; };
-		D248A4342069724A004C02C6 /* ButterflyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ButterflyScene.sks; sourceTree = "<group>"; };
 		D248A43620697D05004C02C6 /* Butterfly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butterfly.swift; sourceTree = "<group>"; };
-		D268B5192069662D004EF7BD /* CocconScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocconScene.swift; sourceTree = "<group>"; };
 		D2714D4320657FE000E46023 /* Metamorphosis_Sources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metamorphosis_Sources.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2714D4620657FE000E46023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2714D4E20657FE000E46023 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +51,10 @@
 		D2714D662065801000E46023 /* LiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
 		D2714D6F2065803500E46023 /* CaterpillarScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = CaterpillarScene.sks; path = ../../Metamorphosis.playground/Resources/CaterpillarScene.sks; sourceTree = "<group>"; };
 		D289E90A20658371005C7CF1 /* HabaneraByBizet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HabaneraByBizet.mp3; sourceTree = "<group>"; };
-		D289E90C20659D96005C7CF1 /* CaterpillarParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaterpillarParticle.sks; sourceTree = "<group>"; };
+		D2C43851206D6CA200C25018 /* PresentationScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PresentationScene.sks; path = ../../Metamorphosis.playground/Resources/PresentationScene.sks; sourceTree = "<group>"; };
+		D2C43853206D742000C25018 /* CocoonScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = CocoonScene.sks; path = ../../Metamorphosis.playground/Resources/CocoonScene.sks; sourceTree = "<group>"; };
+		D2C43854206D742000C25018 /* CaterpillarScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = CaterpillarScene.sks; path = ../../Metamorphosis.playground/Resources/CaterpillarScene.sks; sourceTree = "<group>"; };
+		D2C43857206D743A00C25018 /* ButterflyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = ButterflyScene.sks; path = ../../Metamorphosis.playground/Resources/ButterflyScene.sks; sourceTree = "<group>"; };
 		D2D603472069881E000CB52E /* ButterflyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyScene.swift; sourceTree = "<group>"; };
 		D2F463E6206AD53800732B21 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		D2F463E8206AD78300732B21 /* HeartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartController.swift; sourceTree = "<group>"; };
@@ -93,11 +93,12 @@
 				D289E90A20658371005C7CF1 /* HabaneraByBizet.mp3 */,
 				D2714D5E2065801000E46023 /* Sources */,
 				D2714D4620657FE000E46023 /* AppDelegate.swift */,
-				D21B730420696053002E8954 /* CocconScene.sks */,
+				D2C43851206D6CA200C25018 /* PresentationScene.sks */,
+				D2C43854206D742000C25018 /* CaterpillarScene.sks */,
+				D2C43857206D743A00C25018 /* ButterflyScene.sks */,
 				D2714D6F2065803500E46023 /* CaterpillarScene.sks */,
-				D248A4342069724A004C02C6 /* ButterflyScene.sks */,
+				D2C43853206D742000C25018 /* CocoonScene.sks */,
 				D2714D4E20657FE000E46023 /* GameViewController.swift */,
-				D289E90C20659D96005C7CF1 /* CaterpillarParticle.sks */,
 				D2714D5020657FE000E46023 /* Main.storyboard */,
 				D2714D5320657FE000E46023 /* Assets.xcassets */,
 				D2714D5520657FE000E46023 /* LaunchScreen.storyboard */,
@@ -119,7 +120,6 @@
 				D2714D642065801000E46023 /* SKButton.swift */,
 				D2714D652065801000E46023 /* CaterpillarScene.swift */,
 				D2714D662065801000E46023 /* LiveView.swift */,
-				D268B5192069662D004EF7BD /* CocconScene.swift */,
 				D248A43620697D05004C02C6 /* Butterfly.swift */,
 				D2F463E8206AD78300732B21 /* HeartController.swift */,
 			);
@@ -186,14 +186,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D248A4352069724A004C02C6 /* ButterflyScene.sks in Resources */,
-				D21B730520696053002E8954 /* CocconScene.sks in Resources */,
+				D2C43858206D743A00C25018 /* ButterflyScene.sks in Resources */,
 				D2714D702065803500E46023 /* CaterpillarScene.sks in Resources */,
+				D2C43855206D742000C25018 /* CocoonScene.sks in Resources */,
 				D2714D5220657FE000E46023 /* Main.storyboard in Resources */,
 				D2714D5420657FE000E46023 /* Assets.xcassets in Resources */,
 				D2714D5720657FE000E46023 /* LaunchScreen.storyboard in Resources */,
 				D289E90B20658371005C7CF1 /* HabaneraByBizet.mp3 in Resources */,
-				D289E90D20659D96005C7CF1 /* CaterpillarParticle.sks in Resources */,
+				D2C43852206D6CA200C25018 /* PresentationScene.sks in Resources */,
+				D2C43856206D742000C25018 /* CaterpillarScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D268B51A2069662D004EF7BD /* CocconScene.swift in Sources */,
 				D2714D6D2065801000E46023 /* CaterpillarScene.swift in Sources */,
 				D2714D682065801000E46023 /* Bubble.swift in Sources */,
 				D248A43720697D05004C02C6 /* Butterfly.swift in Sources */,

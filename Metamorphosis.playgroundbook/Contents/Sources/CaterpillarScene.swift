@@ -19,11 +19,11 @@ public class CaterpillarScene: SKScene {
         super.sceneDidLoad()
         
         self.setupNodes()
-        self.physicsWorld.contactDelegate = self
-        self.button.delegate = self
-        
-        self.audioHelper = AudioHelper(audio: .first)
-        self.audioHelper.play()
+//        self.physicsWorld.contactDelegate = self
+//        self.button.delegate = self
+//        
+//        self.audioHelper = AudioHelper(audio: .first)
+//        self.audioHelper.play()
     }
     
     private func setupNodes() {
@@ -31,11 +31,11 @@ public class CaterpillarScene: SKScene {
         self.transitionMessage = self.childNode(withName: "transitionMessage") as! SKLabelNode
         self.particle.isHidden = true
         self.happinessBar = self.childNode(withName: "happinessBar") as! HappinessBar
-        self.happinessBar.happinessLevel = 1
+//        self.happinessBar.happinessLevel = 1
         
-        self.caterpillar = self.childNode(withName: "caterpillar") as! Caterpillar
-        self.three = self.childNode(withName: "three") as! SKSpriteNode
-        self.button = self.childNode(withName: "button") as! SKButton
+//        self.caterpillar = self.childNode(withName: "caterpillar") as! Caterpillar
+//        self.three = self.childNode(withName: "three") as! SKSpriteNode
+//        self.button = self.childNode(withName: "button") as! SKButton
     }
     
     public override func didMove(to view: SKView) {
@@ -70,7 +70,7 @@ public class CaterpillarScene: SKScene {
 
 extension CaterpillarScene : SKButtonDelegate {
     
-    func buttonPressed(target: SKButton) {
+    public func buttonPressed(target: SKButton) {
         self.caterpillar.moveLeft()
         self.happinessBar.decreaseBar(percentage: 0.1)
     }

@@ -8,12 +8,12 @@
 import Foundation
 import SpriteKit
 
-@objc protocol SKButtonDelegate {
+@objc public protocol SKButtonDelegate {
     func buttonPressed(target: SKButton)
     @objc optional func buttonReleased(target: SKButton)
 }
 
-class SKButton : SKSpriteNode {
+public class SKButton : SKSpriteNode {
     
     public var delegate : SKButtonDelegate?
     private var _numberOfTouches = 1
@@ -28,19 +28,19 @@ class SKButton : SKSpriteNode {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.isUserInteractionEnabled = true
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.count <= numberOfTouches  {
             self.delegate?.buttonPressed(target: self)
         }
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.count <= numberOfTouches  {
             if let buttonReleased = delegate?.buttonReleased {
                 buttonReleased(self)
@@ -48,7 +48,7 @@ class SKButton : SKSpriteNode {
         }
     }
     
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.count <= numberOfTouches  {
             if let buttonReleased = delegate?.buttonReleased {
                 buttonReleased(self)

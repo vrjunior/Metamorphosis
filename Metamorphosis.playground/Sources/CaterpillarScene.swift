@@ -55,6 +55,7 @@ public class CaterpillarScene: SKScene {
     }
     
     private func removeCaterpillar() {
+        self.caterpillar.removeAllActions()
         let fadeAlpha = SKAction.fadeAlpha(to: 0, duration: 0.2)
         let remove = SKAction.run {
             self.caterpillar.isHidden = true
@@ -70,7 +71,7 @@ public class CaterpillarScene: SKScene {
 
 extension CaterpillarScene : SKButtonDelegate {
     
-    func buttonPressed(target: SKButton) {
+    public func buttonPressed(target: SKButton) {
         self.caterpillar.moveLeft()
         self.happinessBar.decreaseBar(percentage: 0.1)
     }

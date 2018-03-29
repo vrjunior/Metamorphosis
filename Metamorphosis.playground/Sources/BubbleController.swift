@@ -6,12 +6,18 @@ public class BubbleController {
     
     private var scene: SKScene!
     public var bubbleDelegate: BubbleDelegate?
+    private var timer: Timer?
     
     let quotes: [String] = [
         "Kindness Matters",
         "Try Kindness",
         "Be kind",
-        "Kindness inpires kindess"
+        "Kindness inpires kindess",
+        "Free kindness",
+        "❤️",
+        "😊",
+        "☺️",
+        "😄"
     ]
     
     let colors = [
@@ -50,11 +56,15 @@ public class BubbleController {
     
     public func startCreateBalls() {
         
-        self.createBallsWave()
+        timer = Timer.scheduledTimer(timeInterval: 6.0, target: self, selector: #selector(BubbleController.createBallsWave), userInfo: nil, repeats: true)
         
     }
     
-    private func createBallsWave() {
+    public func stopCreateBalls() {
+        self.timer?.invalidate()
+    }
+    
+    @objc private func createBallsWave() {
         
         let amountOfBalls = Int(arc4random_uniform(UInt32(maxBubblesPerWave / 2))) + maxBubblesPerWave / 2
         
@@ -68,7 +78,7 @@ public class BubbleController {
         
             
             
-            bubble.position = CGPoint(x: randomX, y: -(self.scene.size.height / 2))
+            bubble.position = CGPoint(x: randomX, y: -(self.scene.size.height / 2 + 100))
             
             self.scene.addChild(bubble)
                         

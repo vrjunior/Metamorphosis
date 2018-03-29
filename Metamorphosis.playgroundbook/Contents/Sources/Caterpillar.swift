@@ -9,12 +9,12 @@
 import Foundation
 import SpriteKit
 
-class Caterpillar : SKSpriteNode {
+public class Caterpillar : SKSpriteNode {
     
-    var walkFrames: [SKTexture] = []
+    private var walkFrames: [SKTexture] = []
     public var moveDistance: CGFloat = 80
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
 
@@ -44,7 +44,7 @@ class Caterpillar : SKSpriteNode {
         self.run(group)
     }
     
-    func moveLeft(){
+    public func moveLeft(){
         self.move(distance: -self.moveDistance)
     }
     

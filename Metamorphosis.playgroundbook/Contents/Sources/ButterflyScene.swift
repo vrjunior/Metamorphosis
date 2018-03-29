@@ -254,7 +254,7 @@ extension ButterflyScene : HeartControllerDelegate {
 
 extension ButterflyScene : SKButtonDelegate {
     
-    func buttonPressed(target: SKButton) {
+    public func buttonPressed(target: SKButton) {
         
         if target == self.buttonUp {
             

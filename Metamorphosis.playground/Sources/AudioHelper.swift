@@ -11,6 +11,9 @@ import AVFoundation
 
 public enum AudioType: String {
     case first = "HabaneraByBizet.mp3"
+    case second = "MorningMoodbyGrieg.mp3"
+    case third = "WaltzOfTheFlowersByTchaikovsky.mp3"
+    case popBubble = "popBubble.mp3"
 }
 
 public class AudioHelper {
@@ -21,6 +24,7 @@ public class AudioHelper {
         do {
             if let url = Bundle.main.url(forResource: audio.rawValue, withExtension: nil) {
                 self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+                
                 self.audioPlayer?.prepareToPlay()
                 
             }
@@ -32,6 +36,16 @@ public class AudioHelper {
     
     
     public func play() {
+        
+        if let audioPlayer = self.audioPlayer {
+            // negative to loop infinite
+            audioPlayer.numberOfLoops = -1
+            
+            audioPlayer.play()
+        }
+    }
+    
+    public func playOnce() {
         if let audioPlayer = self.audioPlayer {
             audioPlayer.play()
         }

@@ -14,8 +14,10 @@ open class Bubble : SKShapeNode {
     init(circleOfRadius: CGFloat, text: String){
         super.init()
         
+        //creates and setup label
         self.setupLabel(text: text)
         
+        //creates diameter with radius
         var diameter = circleOfRadius * 2
 
         //check if text fits on the circle, if not the bubble is resized
@@ -23,22 +25,23 @@ open class Bubble : SKShapeNode {
         
         self.path = SKShapeNode(ellipseIn: CGRect(origin: CGPoint.zero, size: CGSize(width: diameter, height: diameter))).path
         
-        self.label.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
+        //set posision on center of bubble
+        self.label.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2 - self.label.frame.height / 2)
         
+        //enable user interection for tap
         self.isUserInteractionEnabled = true
         
+        //create and apply physics body to the bubble
         self.physicsBody = SKPhysicsBody(circleOfRadius: circleOfRadius)
         self.physicsBody?.affectedByGravity = false
-        
         self.physicsBody?.collisionBitMask = 1
         self.physicsBody?.categoryBitMask = 1
         
+        
+        //add action to bubble fly
         self.run(self.randomBubbleAction(screenHeight: 1000)) {
             self.removeFromParent()
         }
-        
-        
-       // self.setupLabel(center: self.frame.width / 2)
         
     }
     
@@ -47,11 +50,12 @@ open class Bubble : SKShapeNode {
         self.label.fontSize = 24
         self.label.fontColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
-        //self.label.lineBreakMode = .
         self.label.numberOfLines = 2
         
-        //bold text
-        self.label.fontName = ("\(self.label.fontName)-Bold")?
+        //set bold to text
+        if let fontName = self.label.fontName {
+            self.label.fontName = ("\(fontName)-Bold")
+        }
         
         //adding label
         self.addChild(label)
@@ -109,12 +113,5 @@ open class Bubble : SKShapeNode {
         self.delegate?.popBubble(bubble: self)
     }
     
-//    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        
-//    }
-//    
-//    open override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        
-//    }
     
 }

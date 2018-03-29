@@ -11,7 +11,7 @@ public func loadLiveView(scene: SKScene)
     
     // Present the scene
     sceneView.presentScene(scene)
-    
+
     sceneView.ignoresSiblingOrder = false
 
     PlaygroundSupport.PlaygroundPage.current.liveView = sceneView

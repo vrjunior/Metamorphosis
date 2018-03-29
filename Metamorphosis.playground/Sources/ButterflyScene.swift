@@ -15,6 +15,8 @@ public class ButterflyScene: SKScene {
     var heartCounter: Int = 0
     var heartCounterLabel: SKLabelNode!
     
+    var backgroundAudio: AudioHelper!
+    
     var background: SKNode!
     var skies: [SKSpriteNode] = []
     var mountains: [SKSpriteNode] = []
@@ -43,6 +45,9 @@ public class ButterflyScene: SKScene {
         
         self.heartController = HeartController()
         self.heartController.delegate = self
+        
+        self.backgroundAudio = AudioHelper(audio: .third)
+        self.backgroundAudio.play()
     }
     
     public override func didMove(to view: SKView) {
@@ -254,7 +259,7 @@ extension ButterflyScene : HeartControllerDelegate {
 
 extension ButterflyScene : SKButtonDelegate {
     
-    func buttonPressed(target: SKButton) {
+    public func buttonPressed(target: SKButton) {
         
         if target == self.buttonUp {
             
