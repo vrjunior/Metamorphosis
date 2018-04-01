@@ -2,24 +2,16 @@
 
  # The Caterpillar
  
- ## Sometimes we are like a **caterpillar**
- 
- */
+ ### Sometimes we are like a **caterpillar**.
 
+ ### We just prison ourselves...
+ 
+ ### In a bubble, alone... in the darkness.
+ */
 /*:
- ## Hands on
- ### Walk to a safe place by taping any place 👆🏻📱
+ ## Tutorial
+ ### Walk to a safe place by taping any place on the screen👆🏻📱
  */
- 
-/*:
- ## We just prison ourselves...
- 
- ## In a bubble, alone... in the darkness
- */
-
-//: ![Caterpillar?] (Metamorphosis_Resources/caterpillar1.png)
-
-
 //: [Next](Cocoon)
 
 

@@ -1,23 +1,17 @@
 //: [Previous](Butterfly)
-
 /*:
- # Well done!!
-*/
+ ## Well done!!
+ ### Like the catepillar we change when we practice goodness.
 
-/*:
- ## Like the catepillar we change when we practice goodness
+ ### How about collect some love throw the world?
+
+ ### No *goal*, just *love*.
+
  */
-
 /*:
- ## How about collect some love throw the world?
- */
-
-/*:
- ## No *goal*, just *love*
+ ## Tutorial
+ ![Tutorial?](tutorial.png "Tutorial")
 */
-
-//: ![Tutorial?](tutorial.png)
-
 /*:
   ### My name is Valmir Massoni Junior and this is my playground to WWDC18
 */
